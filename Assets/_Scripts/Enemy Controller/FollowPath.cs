@@ -8,6 +8,7 @@ public class FollowPath : MonoBehaviour
     //Array of waypoints to walk from one to the next one 
     public Transform[] waypoints;
 
+    public int damage;
     //walk speed that can be set 
     public float moveSpeed = 2f;
 
@@ -25,7 +26,10 @@ public class FollowPath : MonoBehaviour
     {
         move();
     }
-
+    public int getDamage()
+    {
+        return damage;
+    }
     private void move()
     {
         //if enemy didnt reach last waypoint it can move
