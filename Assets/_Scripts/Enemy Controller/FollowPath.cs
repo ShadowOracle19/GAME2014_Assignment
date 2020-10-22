@@ -47,4 +47,10 @@ public class FollowPath : MonoBehaviour
             }
         }
     }
+
+    public void resetPlayer()
+    {
+        transform.position = waypoints[0].position;
+        waypointIndex = 0;
+    }
 }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class EnemyDamage : MonoBehaviour
 {
+    public AudioSource damageSound;
     public GameObject[] enemies;
     private int damage;
     public TextMeshProUGUI lives;
@@ -39,9 +40,11 @@ public class EnemyDamage : MonoBehaviour
             if (collision.gameObject == enemy)
             {
                 //Debug.Log("collide");
+                damageSound.Play();
                 damage = enemy.GetComponent<FollowPath>().getDamage();
                 lifes -= damage;
                 lives.text = lifes.ToString();
+                enemy.GetComponent<FollowPath>().resetPlayer();
             }
         }
     }
