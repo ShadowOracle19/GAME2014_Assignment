@@ -703,7 +703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3922545614770239001, guid: 3baafe177772f004185ba9d76e5e7235, type: 3}
       propertyPath: m_Name
-      value: AnotherTurretItem (1)
+      value: 'MissileTurretItem '
       objectReference: {fileID: 0}
     - target: {fileID: 3922545614770239014, guid: 3baafe177772f004185ba9d76e5e7235, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -727,7 +727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3922545614770239014, guid: 3baafe177772f004185ba9d76e5e7235, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseAnotherTurret
+      value: PurchaseMissileTurret
       objectReference: {fileID: 0}
     - target: {fileID: 3922545614770239014, guid: 3baafe177772f004185ba9d76e5e7235, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2786,12 +2786,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201257186}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.78, y: -0.08, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.780029, y: -0.08001709, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1221300134
 PrefabInstance:
@@ -6319,7 +6319,7 @@ Transform:
   - {fileID: 1685729011}
   - {fileID: 909632378}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1754603300
 GameObject:
@@ -6692,7 +6692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 5059406356864024692, guid: 0348efe4fe2740346ba4394aa3b6f801, type: 3}
-  anotherTurretPrefab: {fileID: 0}
+  MissleTurretPrefab: {fileID: 5059406356864024692, guid: 20e85c70a5958ab4f9814cfbef659c43, type: 3}
 --- !u!1 &1971076424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3965147847521708569, guid: 3d6055edac313e243b099155a17720ba, type: 3}
