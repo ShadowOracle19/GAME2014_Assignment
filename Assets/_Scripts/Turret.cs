@@ -14,6 +14,7 @@ public class Turret : MonoBehaviour
     public float fireRate = 1f;
     private float fireCountdown = 0f;
 
+
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
 
