@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Rat
   - BallGuy
+  - Enemy
   layers:
   - Default
   - TransparentFX
