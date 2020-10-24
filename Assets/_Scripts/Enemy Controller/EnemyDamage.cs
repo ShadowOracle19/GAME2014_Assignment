@@ -41,10 +41,10 @@ public class EnemyDamage : MonoBehaviour
             {
                 //Debug.Log("collide");
                 damageSound.Play();
-                damage = enemy.GetComponent<FollowPath>().getDamage();
+                //damage = enemy.GetComponent<FollowPath>().getDamage();
                 lifes -= damage;
                 lives.text = lifes.ToString();
-                enemy.GetComponent<FollowPath>().resetPlayer();
+                //enemy.GetComponent<FollowPath>().resetPlayer();
             }
         }
     }
