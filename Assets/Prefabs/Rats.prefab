@@ -165,10 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a222faf3719f3a43831088355aae03f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
   health: 100
   soulsRecevied: 50
-  hit: {fileID: -8834551351525030852}
 --- !u!82 &-8834551351525030852
 AudioSource:
   m_ObjectHideFlags: 0
