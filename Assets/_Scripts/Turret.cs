@@ -1,4 +1,13 @@
-﻿using System;
+﻿////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FileName: Turret.cs
+//FileType: Visual C# Script
+//Author: Lucas Coates
+//Student Number: 101172500
+//Last Modified On: 10/24/2020 10:27 PM
+//Copy Rights: Mana Burn
+//Description: Class that controls the turret and the related attributes 
+///////////////////////////////////////////////////////////////////////////////////////////////
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;

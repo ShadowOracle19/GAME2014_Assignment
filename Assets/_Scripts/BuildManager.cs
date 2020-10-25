@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FileName: BuildManager.cs
+//FileType: Visual C# Script
+//Author: Lucas Coates
+//Student Number: 101172500
+//Last Modified On: 10/24/2020 10:27 PM
+//Copy Rights: Mana Burn
+//Description: Manages if you can build on a placemat for a turret and Instantiates them
+///////////////////////////////////////////////////////////////////////////////////////////////
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +36,7 @@ public class BuildManager : MonoBehaviour
     {
         if(PlayerStates.Souls < turretToBuild.cost)
         {
-            Debug.Log("Not enough souls");
+            
             return;
         }
 
@@ -36,7 +45,7 @@ public class BuildManager : MonoBehaviour
         GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         node.turret = turret;
 
-        Debug.Log("Turret built! Money Left: " + PlayerStates.Souls);
+        
     }
 
     public void SelectTurretToBuild(TurretBlueprint turret)

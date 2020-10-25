@@ -1,4 +1,13 @@
-﻿using System;
+﻿////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FileName: Bullet.cs
+//FileType: Visual C# Script
+//Author: Lucas Coates
+//Student Number: 101172500
+//Last Modified On: 10/24/2020 10:27 PM
+//Copy Rights: Mana Burn
+//Description: Class that controls the bullets the turrets shoot
+///////////////////////////////////////////////////////////////////////////////////////////////
+using System;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
