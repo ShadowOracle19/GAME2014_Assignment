@@ -6789,7 +6789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSouls: 400
-  startLives: 20
+  startLives: 1
 --- !u!114 &1959335414
 MonoBehaviour:
   m_ObjectHideFlags: 0

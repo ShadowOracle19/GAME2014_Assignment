@@ -30,9 +30,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void Die()
+    void Die()
     {
         PlayerStates.Souls += soulsRecevied;
+
+        WaveSpawner.EnemiesAlive--;
+
         Destroy(gameObject);
     }
 
@@ -60,6 +63,7 @@ public class Enemy : MonoBehaviour
     void EndPath()
     {
         PlayerStates.Lives--;
+        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
     }
 }
