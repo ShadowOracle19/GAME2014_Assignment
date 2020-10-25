@@ -17,6 +17,7 @@ public class Turret : MonoBehaviour
 
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
+    public AudioSource laser;
 
     public Transform turret;
 
@@ -82,16 +83,12 @@ public class Turret : MonoBehaviour
     {
         GameObject BulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = BulletGO.GetComponent<Bullet>();
-
-        if(bullet != null)
+        laser.Play();
+        if (bullet != null)
         {
             bullet.Seek(target);
         }
     }
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position, range);
-    }
+    
 }

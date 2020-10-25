@@ -20,7 +20,6 @@ public class StartButtonBehaviour : MonoBehaviour
     // Event Handler for the StartButton_Pressed Event
     public void OnStartButtonPressed()
     {
-        Debug.Log("StartButton Pressed");
         SceneManager.LoadScene("Play");
     }
 }
